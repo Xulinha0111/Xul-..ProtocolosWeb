@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Http</title>
+    <link rel="stylesheet" href="..\css\style.css">
+</head>
+
+<body bgcolor="#F0E68C">
+  <header class="top">
+
+    <header class="imagem">
+    <h1><a href="#"><img src="..\images\Xulê Web.png" alt=""></a></h1>
+    </header>
+
+    <nav>
+        <ul class="menu">
+            <li><button class="botao1"><a href="..\pages\http.html">HTTP</a></button></li>
+            <li><button class="botao1"><a href="..\pages\https.html">HTTPS</a></button></li>
+            <li><button class="botao1"><a href="..\pages\ftp.html">FTP</a></button></li>
+            <li><button class="botao1"><a href="..\pages\dhcp.html">DHCP</a></button></li>
+            <li><button class="botaohome"><a href="..\index.html">DNS</a></button></li>
+            <li><button class="botao1"><a href="..\pages\telnet.html">TELNET</a></button></li>
+            <li><button class="botao1"><a href="..\pages\ssh.html">SSH</a></button></li>
+
+        </ul>
+    </nav>
+</header>
+
+<header class="body">
+
+    <body bgcolor="#F0E68C">
+        <h1><center>O que é o DNS?</h1></center>
+     <h3>O nome DNS significa Domain Name System, ou sistema de nomes de domínios, e contém o registro de todos os domínios da internet. <br>
+         A sua função não é hospedar sites ou aplicações que criamos, mas sim permitir que as requisições cheguem aos locais corretos.
+     
+     Um servidor DNS
+     é feito única e exclusivamente para a tradução de domínios para endereços de IP, então vamos entender como os servidores DNS podem realizar a sua tarefa
+     e como são passadas as requisições para ele.
+     
+     <h1><center>Para que serve o DNS na rede e como ele funciona?</center></h1>
+     <h3>Quando escrevemos uma URL no navegador, como alura.com.br, o nosso computador não sabe como se conectar com o site da Alura, mas ele conhece 
+          alguém que sabe, o servidor DNS, então ele manda uma requisição pedindo para o DNS responder com o endereço IP do site.<br>
+     
+     Agora, quando essa requisição chegar no servidor DNS, ele tem que agir rápido. Então, para ser o mais rápido possível, eles mantêm um cache, ou uma
+     cópia da informação, em memória RAM e vão primeiro olhar o cache para ver se tem uma resposta.<br><br> 
+     
+     Se não encontrar, têm que fazer uma requisição para um Servidor raiz, um servidor parecido com o DNS, que guarda informações de outros servidores e
+     que irá responder com um endereço de um servidor de domínio de nível superior, ou servidor TLD.
+     
+     O servidor TLD é o servidor responsável por guardar informações da última parte da ULR, o “.com”, “.net”, “.org” e assim por diante, sendo um servidor para cada, e a tarefa dele é responder a última requisição <br>
+      com o endereço do servidor DNS autoritativo.<br>
+     
+     Por último, o servidor DNS autoritativo, que conhece o endereço de onde o site está hospedado, responde o servidor DNS com o endereço, e assim o DNS pode te responder com o endereço IP.
+     <h1><center>Segurança</h1></center>
+     <h3>Os servidores DNS são de muita importância no funcionamento da internet, e caso encontrem problemas, tanto de performance quanto de segurança,
+          podemos ter uma experiência ruim na internet, com ela parecendo lenta para carregar sites ou nos mandando para sites errados ou comprometidos,
+         facilitando a aplicação de golpes e roubos de informações sensíveis.
+     
+     Sendo assim, escolher um servidor DNS bom é uma decisão importante, e se for feita corretamente, só precisaremos fazê-la uma ou poucas vezes. 
+     </h3>
+     </body>
+     </html>
